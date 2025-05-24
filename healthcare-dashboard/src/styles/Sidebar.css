@@ -1,0 +1,57 @@
+.sidebar {
+  width: 14%;
+  height: 100vh;
+  background-color: #f5f7fa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h1 {
+  margin: 15px;
+}
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.wrapper ul{
+  display: flex;
+  flex-direction: column;
+   color: #888888;
+}
+
+.general{
+  display: flex;
+  gap: 20px;
+}
+
+.tool{
+  display: flex;
+  gap: 20px;
+}
+
+.wrapper ul li {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  color: #888888;
+
+}
+
+.tool{
+  margin-top: 30%;
+}
+
+.setting{
+  margin-top: 90%;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  color: #888888;
+}

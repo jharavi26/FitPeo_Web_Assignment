@@ -1,25 +1,18 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
-import HumanBody from '../components/HumanBody'
-import HealthStatusCard from '../components/HealthStatusCard'
-import Calendar from '../components/Calendar'
-import Schedule from '../components/Schedule'
-import AppoinmentCard from '../components/AppoinmentCard'
-import ActivityChart from '../components/ActivityChart'
+import "../styles/Dashboard.css"
+import DashboardContent from '../components/DashboardContent'
+
 
 function Dashboard() {
   return (
-    <div>
+    <div className='container'>
+    <div className='dashboard'>
       <Sidebar/>
       <Header/>
-      <HumanBody/>
-      <HealthStatusCard/>
-      <Calendar/>
-      <Schedule/>
-      <AppoinmentCard/>
-      <ActivityChart/>
-
+    </div>
+    <DashboardContent/>
     </div>
   )
 }

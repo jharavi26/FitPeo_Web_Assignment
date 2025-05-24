@@ -1,0 +1,42 @@
+.header{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.search{
+  width: 40%;
+  margin-left: 25px;
+  border: 1px solid #f5f7fa;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.search input{
+  border : none;
+  outline: none;
+  font-size: medium;
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 150px;
+}
+
+.profile button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

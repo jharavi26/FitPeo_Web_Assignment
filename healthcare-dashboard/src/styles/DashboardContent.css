@@ -1,0 +1,23 @@
+
+.two-column-container {
+  display: flex;
+  margin-left: 250px;
+  height: 100vh;
+  width: calc(100% - 250px);
+}
+
+.column {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
+.left {
+  background-color: lightblue;
+}
+
+/* .right {
+  background-color: lightgreen;
+} */
