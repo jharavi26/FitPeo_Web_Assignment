@@ -1,0 +1,10 @@
+.calendar{
+  height: 200px;
+  width: 90%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin: 15px;
+  padding: 5px;
+}

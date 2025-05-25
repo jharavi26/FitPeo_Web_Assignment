@@ -14,10 +14,10 @@ import "../styles/Sidebar.css";
 function Sidebar() {
   return (
     <div className='sidebar'>
-      <h1>Healthcare.</h1>
+      <h2>Healthcare.</h2>
       <div className='wrapper'>
       <ul className='general'>General
-      <li style={{color: "blue " , fontWeight : "bold"}}><RxDashboard/>Dashboard</li>
+      <li style={{color: "Black" , fontWeight : "bold"}}><RxDashboard/>Dashboard</li>
       <li><LuArrowUpDown/>History</li>
       <li><FaCalendarAlt/>Calendar</li>
       <li><CgAddR/>Appointments</li>

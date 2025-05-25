@@ -1,23 +1,7 @@
-
-.two-column-container {
-  display: flex;
-  margin-left: 250px;
-  height: 100vh;
-  width: calc(100% - 250px);
-}
-
-.column {
+.container{
   width: 50%;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: aqua;
 }
-
-
-.left {
-  background-color: lightblue;
-}
-
-/* .right {
-  background-color: lightgreen;
-} */

@@ -2,6 +2,7 @@ export const healthMetrics = [
   {
     id: 1,
     title: "Lungs",
+    icon: "lungs",
     date: "26 Oct 2021",
     status: "critical",
     progress: 30,
@@ -10,6 +11,7 @@ export const healthMetrics = [
   {
     id: 2,
     title: "Teeth",
+    icon: "tooth",
     date: "26 Oct 2021",
     status: "healthy",
     progress: 80,
@@ -18,6 +20,7 @@ export const healthMetrics = [
   {
     id: 3,
     title: "Bone",
+    icon: "bone",
     date: "26 Oct 2021",
     status: "moderate",
     progress: 45,

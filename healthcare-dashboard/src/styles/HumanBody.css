@@ -1,0 +1,15 @@
+.humanbody img{
+height: 300px;
+width: 300px;
+}
+
+.header2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.component{
+  display: flex;
+  gap: 50px;
+  margin: 10px 0 0 10px;
+}
