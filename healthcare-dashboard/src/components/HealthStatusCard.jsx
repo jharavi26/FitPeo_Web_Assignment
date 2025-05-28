@@ -27,7 +27,7 @@ function HealthStatusCard({HealthMetrics}) {
           </div>
         </div>
       ))}
-      <p style={{marginLeft :"80%"}}>Details →</p>
+      <p style={{marginLeft :"50%"}}>Details→</p>
     </div>
   );
 }

@@ -1,11 +1,11 @@
 .metric-card {
-  background: #f5f7fa;
-  border-radius: 14px;
-  box-shadow: 0 2px 12px rgba(167, 191, 236, 0.12);
-  padding: 10px 12px 10px 12px;
+  background-color: #ffffff;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  border-radius: 16px;           
+  padding: 10px;                 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .metric-header {
@@ -46,3 +46,63 @@
   border-radius: 6px;
   transition: width 0.4s cubic-bezier(.4,2.3,.3,1);
 }
+
+
+@media (max-width: 768px) {
+  .metric-card {
+    border-radius: 12px;
+    padding: 8px;
+  }
+  .metric-header {
+    gap: 7px;
+  }
+  .metric-icon {
+    font-size: 1.5rem;
+    margin-right: 6px;
+  }
+  .metric-header h3 {
+    font-size: 1rem;
+  }
+  .metric-card p {
+    font-size: 0.88rem;
+  }
+  .progress-bar-container {
+    height: 7px;
+    margin-top: 6px;
+    border-radius: 4px;
+  }
+  .progress-bar {
+    border-radius: 4px;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .metric-card {
+    border-radius: 8px;
+    padding: 6px;
+    min-width: 0;
+  }
+  .metric-header {
+    gap: 5px;
+  }
+  .metric-icon {
+    font-size: 1.1rem;
+    margin-right: 4px;
+  }
+  .metric-header h3 {
+    font-size: 0.95rem;
+  }
+  .metric-card p {
+    font-size: 0.8rem;
+  }
+  .progress-bar-container {
+    height: 5px;
+    margin-top: 4px;
+    border-radius: 3px;
+  }
+  .progress-bar {
+    border-radius: 3px;
+  }
+}
+

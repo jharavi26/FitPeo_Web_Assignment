@@ -1,7 +1,19 @@
-.container{
-  width: 50%;
-  height: 100vh;
+.main{
   display: flex;
-  justify-content: center;
-  background: aqua;
+  background-color : #FFFFFF;
+  margin : 0 3% 0 15%;
+}
+
+
+@media (max-width: 768px) {
+  .main {
+    margin: 0 2% 0 5%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  .main {
+    margin: 0 1vw;
+    flex-direction: column;
+  }
 }

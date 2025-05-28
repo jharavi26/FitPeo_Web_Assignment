@@ -1,5 +1,26 @@
-.dashboard{
+.dashboard {
   display: flex;
-  margin-left: 13%;
+  width: 100vw;
+  height: 100vh;
 }
 
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .dashboard {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    padding: 0 2vw;
+    box-sizing: border-box;
+  }
+}

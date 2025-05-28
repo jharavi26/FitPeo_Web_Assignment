@@ -1,38 +1,42 @@
 export const calendarSlots = [
-  {
-    day : "Mon",
-    date: "25",
-    times: ["10:00", "11:00", "12:00"],
-  },
-  {
-    day : "Tues",
-    date: "26",
-    times: ["08:00", "09:00", "10:00"],
-    highlight: "09:00",
-  },
-  {
-     day : "Wed",
-    date: "27",
-    times: ["12:00", "-", "13:00"],
-  },
-  {
-     day : "Thurs",
-    date: "28",
-    times: ["10:00", "11:00", "-"],
-  },
-  {
-     day : "Fri",
-    date: "29",
-    times: ["-", "14:00", "15:00"],
-  },
-  {
-     day : "Sat",
-    date: "30",
-    times: ["12:00", "14:00", "15:00"],
-  },
-  {
-     day : "Sun",
-    date: "31",
-    times: ["09:00" , "10:00", "11:00"],
-  },
-];
+    { 
+      day: "Mon",
+       date: 25, 
+       times: ["10:00", "11:00", "12:00"] 
+    },
+    { 
+      day: "Tues", 
+      date: 26, 
+      times: ["08:00", "09:00", "10:00"], 
+      highlight: true, active : 1,
+    },
+    { 
+      day: "Wed", 
+      date: 27, 
+      times: ["12:00", "-", "13:00"] ,
+    },
+    { 
+      day: "Thurs", 
+      date: 28, 
+      times: ["10:00", "11:00", "-"], 
+      booked : 1,
+    },
+    { day: "Fri", 
+      date: 29, 
+      times: ["-", "14:00", "16:00"],
+    },
+    { day: "Sat", 
+      date: 30, 
+      times: ["12:00", "14:00", "15:00"], 
+      booked : 0,
+    },
+    { 
+      day: "Sun", 
+      date: 31, 
+      times: ["09:00", "10:00", "11:00"], 
+      disabled: true,
+      booked : 0,
+    }
+  ];
+
+   

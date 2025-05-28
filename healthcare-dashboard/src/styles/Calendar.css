@@ -1,10 +1,144 @@
-.calendar{
-  height: 200px;
-  width: 90%;
-  border: 2px solid black;
+.calendar-component{
+  display: flex;
+  gap: 16px;
+  background-color: #f8fafd;
+  flex-direction: column;
+  margin : 10px 0 0 10px;
+  border-radius: 16px;
+  justify-content: center;
+}
+
+.calendar-component.highlight {
+  background: #e9f0fd;
+  box-shadow: 0 2px 10px #e3e8f7;
+}
+
+.calendar-header{
   display: flex;
   justify-content: space-between;
-  gap: 5px;
-  margin: 15px;
-  padding: 5px;
+  margin-right: 30px;
+}
+
+.calendar{
+  width: 90%;
+  display: flex;
+  gap: 30px;
+}
+
+.calendar-date{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.calendar-nav{
+  margin-right: 190px;
+}
+
+.calendar-component{
+  display: flex;
+  gap: 10px;
+  margin-left: 20px; 
+}
+
+.calendar-component h3{
+  font-size: 20px;
+}
+
+.calendar-times {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.calendar-time.active {
+  background: #3837AA;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.calendar-time.booked{
+  font-weight: 600;
+  background-color: grey;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.calendar > div:last-child {
+  opacity: 0.5;
+}
+
+
+@media (max-width: 768px) {
+  .calendar-component {
+    padding: 12px;
+    margin: 10px;
+  }
+
+  .calendar-component h3 {
+    font-size: 18px;
+  }
+
+  .calendar-date {
+    font-size: 16px;
+  }
+
+  .calendar {
+    gap: 16px;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .calendar-times {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .calendar-time {
+    flex: 1 0 30%;
+    text-align: center;
+    padding: 4px;
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .calendar-component {
+    border-radius: 8px;
+    margin: 3px 0 0 0;
+    padding: 6px 2px;
+    gap: 5px;
+  }
+  .calendar-header {
+    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .calendar {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  .calendar-date {
+    font-size: 13px;
+  }
+  .calendar-nav {
+    margin-right: 0;
+  }
+  .calendar-component h3 {
+    font-size: 15px;
+  }
+  .calendar-times {
+    gap: 4px;
+  }
+  .calendar-time.active,
+  .calendar-time.booked {
+    font-size: 12px;
+    padding: 2px 0;
+  }
 }

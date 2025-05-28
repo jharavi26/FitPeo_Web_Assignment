@@ -9,9 +9,9 @@ import RightPanel from '../components/RightPanel'
 function Dashboard() {
   return (
     <div className='dashboard'>
-      <Sidebar/>
-      <DashboardContent/>
-      <RightPanel/>
+     <Sidebar/>
+     <DashboardContent/>
+     <RightPanel/>
     </div>
   )
 }

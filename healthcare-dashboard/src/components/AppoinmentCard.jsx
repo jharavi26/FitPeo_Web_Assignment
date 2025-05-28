@@ -5,8 +5,8 @@ function AppoinmentCard({appoinmentCard}) {
   return (
     <div className='appoinmentCard'>
       {
-        appoinmentCard.map((data)=>{
-          return <div className='card'>
+        appoinmentCard.map((data , index)=>{
+          return <div className='card' key={index}>
           <div className='header4'>
           <span>{data.type}</span>
           <span>{data.icon}</span>

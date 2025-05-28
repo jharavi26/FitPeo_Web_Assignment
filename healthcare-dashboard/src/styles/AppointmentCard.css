@@ -1,32 +1,91 @@
-.appointmentCard {
+.appoinmentCard {
   display: flex;
-  gap: px;
+  gap: 30px;
   flex-wrap: wrap;
-  background-color: #f8f9fa;
   align-items: center;
+  margin: 24px 0 10px 50px;
 }
 
 .card {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 10px;
-  width: 220px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  border-radius: 16px;           
+  padding: 20px;                 
+  background-color: #ffffff;     
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
+.appoinmentCard .card:nth-child(2) {
+  width: 300px;  
+}
+
+.appoinmentCard .card:first-child {
+  background-color: #3837AA;
+}
+
+.appoinmentCard .card:first-child span,
+.appoinmentCard .card:first-child p {
+  color: white;
+}
+
 
 .header4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
-  font-weight: bold;
   font-size: 14px;
-  color: #333;
+  color: white;
 }
 
 .card p {
   margin: 4px 0;
-  color: #555;
+  color: white;
   font-size: 12px;
 }
+
+
+@media (max-width: 768px) {
+  .appoinmentCard {
+    gap: 16px;
+    margin: 18px 0 8px 16px;
+  }
+  .card {
+    width: 180px;
+    padding: 14px;
+    border-radius: 12px;
+  }
+  .appoinmentCard .card:nth-child(2) {
+    width: 220px;
+  }
+  .header4 {
+    font-size: 13px;
+  }
+  .card p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 450px) {
+  .appoinmentCard {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0 4px 0;
+    align-items: stretch;
+  }
+  .card,
+  .appoinmentCard .card:nth-child(2) {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .header4 {
+    font-size: 12px;
+  }
+  .card p {
+    font-size: 10px;
+  }
+}
+

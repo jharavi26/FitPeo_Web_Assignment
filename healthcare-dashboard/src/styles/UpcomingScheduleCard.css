@@ -1,0 +1,47 @@
+.schedule{
+  margin : 10px 0 0 20px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.schedule p{
+  color: #B1B3C4;
+} 
+
+
+.scheduleCard {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;        
+  padding: 20px;               
+  background-color: #DDE2F9;    
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+  width: auto;
+  max-width: 100%;   
+  min-width: fit-content;
+}
+
+.header4 {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.card p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 12px;
+}

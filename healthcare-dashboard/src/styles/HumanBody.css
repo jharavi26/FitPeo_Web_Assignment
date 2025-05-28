@@ -1,15 +1,62 @@
-.humanbody img{
-height: 300px;
-width: 300px;
+.humanbody img {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
 }
 
-.header2{
+.humanbody h1 {
+  color: #1d1e4c;
+  margin: 0; 
+}
+
+.body-header {
   display: flex;
   justify-content: space-between;
+  align-items: center; 
+  margin-bottom: 10px; 
 }
 
-.component{
+.body-component {
   display: flex;
   gap: 50px;
   margin: 10px 0 0 10px;
 }
+
+
+@media (max-width: 768px) {
+  .humanbody img {
+    height: 200px;
+    width: 200px;
+  }
+  .body-component {
+    gap: 24px;
+    margin: 8px 0 0 4px;
+  }
+  .body-header h1 {
+    font-size: 1.4rem;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .humanbody img {
+    height: 130px;
+    width: 130px;
+    margin-left: 100px;
+  }
+  .body-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .body-component {
+    flex-direction: column;
+    gap: 12px;
+    margin: 6px 0 0 0;
+  }
+  .body-header h1 {
+    font-size: 1.1rem;
+  }
+}
+
+

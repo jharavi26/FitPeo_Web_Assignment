@@ -1,21 +1,19 @@
 import React from 'react';
 import "../styles/DashboardContent.css"
 import HumanBody from './HumanBody';
-
-import {appointments } from "../data/appointments";
-import Calendar from './Calendar';
-import AppoinmentCard from './AppoinmentCard';
 import Header from './Header';
+import ActivityChart from './ActivityChart';
 
 function DashboardContent() {
   return (
-    <div className='container'>
-    <div className='header3'>
+    <div className='main'>
+    <div className='main-header'>
     <Header/>
-    <div className='component'>
+    <div className='main-component'>
     <HumanBody/>
+    <ActivityChart/>
     </div>
-  </div>
+    </div>
   </div>
   )
 }
